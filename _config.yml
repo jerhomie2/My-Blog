@@ -1,10 +1,10 @@
 ## You should change each of the following fields
 ## to customize your blog
 
-title: Stat 386 Blog
+title: Data Science Blog
 description: "This description of the blog will appear on the 'About' page." 
-author: Your name
-author_description: "This description of who you are will appear on the 'About' page." 
+author: Jarom Asher
+author_description: "Senior Statistics:Data Science Student at BYU"
 
 url: https://esnt.github.io ## change this to https://yourusername.github.io
 baseurl: /another-stat386-theme ## change this to the name of your blog repository
