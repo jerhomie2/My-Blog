@@ -4,15 +4,15 @@
 title: Data Science Blog
 description: "This description of the blog will appear on the 'About' page." 
 author: Jarom Asher
-author_description: "Senior Statistics:Data Science Student at BYU"
+author_description: "Senior Statistics:Data Science Major at BYU"
 
-url: https://esnt.github.io ## change this to https://yourusername.github.io
-baseurl: /another-stat386-theme ## change this to the name of your blog repository
+url: https://jerhomie2.github.io ## change this to https://yourusername.github.io
+baseurl: /blog ## change this to the name of your blog repository
 header_image: /assets/img/headerimg.jpg ## change your header image if you want
 
 ## Add your social media user names.  Github is required, the rest are optional
 social:
-    github:  ## required
+    github: jerhomie2
     twitter: 
     facebook: 
     email: 
