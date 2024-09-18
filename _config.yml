@@ -7,14 +7,12 @@ author: Jarom Asher
 author_description: "Senior Statistics:Data Science Major at BYU"
 
 url: https://jerhomie2.github.io ## change this to https://yourusername.github.io
-baseurl: /blog ## change this to the name of your blog repository
+baseurl: /My-Blog ## change this to the name of your blog repository
 header_image: /assets/img/headerimg.jpg ## change your header image if you want
 
 ## Add your social media user names.  Github is required, the rest are optional
 social:
     github: jerhomie2
-
-
 
 ### Advanced Settings (don't change below unless you know what you are doing)
 
