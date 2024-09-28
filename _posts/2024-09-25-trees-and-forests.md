@@ -4,7 +4,7 @@ title: "How To: Regression Trees & Random Forests"
 date: 2024-09-25
 description: Implement trees and forests in R and Python
 image: "/assets/img/forest.jpg"
-display_image: false  # change this to true to display the image below the bann>
+display_image: false  # change this to true to display the image below the banner
 ---
 
 ### Why Not Just Use Linear Regression?
@@ -20,14 +20,14 @@ But this technique also comes with some blind spots. Most real-world relationshi
 ### Regression Trees in R
 
 ```{r}
-install.packages("rpart")
 library(tidymodels)
+library(rpart)
 
 my_mod <- decision_tree(tree_depth = tune(),
-cost_complexity = tune(),
-min_n=tune()) %>% #Type of model
-set_engine("rpart") %>% # What R function to use
-set_mode("regression")
+    cost_complexity = tune(),
+    min_n=tune()) %>% #Type of model
+    set_engine("rpart") %>% # What R function to use
+    set_mode("regression")
 
 ## Create a workflow with model & recipe
 
