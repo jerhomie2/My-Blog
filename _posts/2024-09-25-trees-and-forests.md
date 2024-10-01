@@ -23,33 +23,58 @@ Regression trees are useful because they help us deal with some of those complex
 
 ![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/tree.png")
 
-Imagine we have a dataset that looks like this.
-
-
-
 ### Regression Trees in R
 
-To 
+So how do we implement Regression trees in R code? Let's go through it step by step using the built in 'mtcars' dataset. 
+
+First, we'll want to read in our data.
 
 ```{r}
-library(tidymodels)
+# Load example data (using the built-in mtcars dataset)
+data(mtcars)
+```
+
+It's always a good idea to plot the data we're interested to get an idea of what we're looking at. In r, I prefer to use ggplot (in the ggfortify library) to plot my data.
+
+```{r}
+# Load necessary libraries
+library(ggfortify)
+
+# Plot the variables we're interested in
+ggplot(data = mtcars,
+       mapping = aes(x = hp, y = wt, col = mpg)) +
+  geom_point() +
+  xlab("Horsepower") +
+  ylab("Weight") +
+  ggtitle("MPG by Horsepower and Weight")
+```
+
+Next, we'll want to make a regression tree model, which will split the data into branches and leaves according to our specifications. Note that regression trees are exceptionally susceptible to overfitting, so we want to make sure to "prune" it back so it doesn't grow too many brances. You can do this using the minsplit, maxdepth, or cp arguments when initializing the model.
+
+```{r}
 library(rpart)
 
-my_mod <- decision_tree(tree_depth = tune(),
-    cost_complexity = tune(),
-    min_n=tune()) %>% #Type of model
-    set_engine("rpart") %>% # What R function to use
-    set_mode("regression")
+# Fit a regression tree model
+# Here, we predict 'mpg' (miles per gallon) based on horsepower and weight
+# Each leaf node will have a minimum of 8 data points in it
+model <- rpart(mpg ~ hp + wt, data = mtcars, minsplit = 8)
 
-## Create a workflow with model & recipe
+# View the model summary
+summary(model)
+```
 
-## Set up grid of tuning values
+The rpart.plot library is great for visualizing the tree that your model has fit.
 
-## Set up K-fold CV
+```{r}
+library(rpart.plot)
+rpart.plot(model)
+```
 
-## Find best tuning parameters
 
-## Finalize workflow and predict
+
+```{r}
+# Make predictions
+predictions <- predict(model, newdata = mtcars)
 ```
 
 ### Regression Trees in Python
