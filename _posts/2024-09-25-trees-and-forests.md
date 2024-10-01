@@ -21,11 +21,11 @@ But this technique also comes with some blind spots. Most real-world relationshi
 
 Regression trees are useful because they help us deal with some of those complexities that linear regression can't, and they usually result in better predictions. The idea is that rather than trying to follow a trend in the data, a tree will designate splitting points, called branches, over and over until all we have are a bunch of small clusters of similar data points. We call these clusters "leaves".
 
-![Regression Tree]("assets/image/tree.png")
-
-# insert image of tree
+![Regression Tree]("https://github.com/jerhomie2/My-Blog/tree/main/assets/img/tree.png")
 
 Imagine we have a dataset that looks like this.
+
+
 
 ### Regression Trees in R
 
