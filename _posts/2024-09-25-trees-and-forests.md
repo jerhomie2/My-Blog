@@ -7,6 +7,10 @@ image: "/assets/img/forest.jpg"
 display_image: false  # change this to true to display the image below the banner
 ---
 
+# intro
+
+
+
 ### Why Not Just Use Linear Regression?
 
 Linear Regression is a commonly used tool for predictive analysis, and for good reason. The computational efficiency and interpretability of linear regression make for a simple, easy-to-use model.
@@ -15,9 +19,17 @@ But this technique also comes with some blind spots. Most real-world relationshi
 
 ### Regression Trees
 
+Regression trees are useful because they help us deal with some of those complexities that linear regression can't, and they usually result in better predictions. The idea is that rather than trying to follow a trend in the data, a tree will designate splitting points, called branches, over and over until all we have are a bunch of small clusters of similar data points. We call these clusters "leaves".
 
+![Regression Tree]("assets/image/tree.png")
+
+# insert image of tree
+
+Imagine we have a dataset that looks like this.
 
 ### Regression Trees in R
+
+To 
 
 ```{r}
 library(tidymodels)
