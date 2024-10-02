@@ -120,10 +120,9 @@ scatter = sns.scatterplot(x=mtcars['horsepower'], y=mtcars['weight'], hue=mtcars
 scatter.set(title="MPG by Horsepower and Weight", xlabel="Horsepower", ylabel="Weight")
 plt.show()
 ```
-<figure>
-    <img src = "https://github.com/jerhomie2/My-Blog/main/assets/img/Py1.png" alt = "" style = "width:600px;">
-    <figcaption>Scatterplot </figcaption>
-<figure>
+
+<img src = "https://github.com/jerhomie2/My-Blog/main/assets/img/Py1.png" alt = "" style = "width:600px;">
+
 
 ![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png")
 
@@ -153,9 +152,7 @@ plot_tree(model, feature_names=['horsepower', 'weight'], filled=True, rounded=Tr
 plt.show()
 ```
 
-<figure>
-    <img src = "https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py2.png" alt = "" style = "width:600px;">
-<figure>
+<img src = "https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py2.png" alt = "" style = "width:600px;">
 
 ![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py2.png")
 
