@@ -121,7 +121,7 @@ scatter.set(title="MPG by Horsepower and Weight", xlabel="Horsepower", ylabel="W
 plt.show()
 ```
 <figure>
-    <img src = "https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png" alt = "" style = "width:600px;">
+    <img src = "https://github.com/jerhomie2/My-Blog/blog/main/assets/img/Py1.png" alt = "" style = "width:600px;">
     <figcaption>Scatterplot </figcaption>
 <figure>
 
@@ -154,7 +154,7 @@ plt.show()
 ```
 
 <figure>
-    <img src = "https://github.com/jerhomie2/My-Blog/main/assets/img/Py2.png" alt = "" style = "width:600px;">
+    <img src = "https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py2.png" alt = "" style = "width:600px;">
 <figure>
 
 ![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py2.png")
