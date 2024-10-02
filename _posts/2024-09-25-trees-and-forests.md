@@ -9,6 +9,8 @@ display_image: false  # change this to true to display the image below the banne
 
 Regression trees are an invaluable tool in predictive analytics. With the ability to quickly and effectively group data into chunks of like observations, they become exceptionally useful as an alternative to other regression models.
 
+In this tutorial, I will briefly discuss the applicability of regression trees and then explain how to build and use regression tree models in both R and Python.
+
 ### Why Not Just Use Linear Regression?
 
 Linear Regression is a commonly used tool for predictive analysis, and for good reason. The computational efficiency and interpretability of linear regression make for a simple, easy-to-use model.
@@ -157,4 +159,4 @@ predictions = model.predict(x) # this function takes just the input values as ar
 print(predictions[:5])  # View first 5 predictions
 ```
 
-Try using regression trees yourself! And if you find this tutorial useful or interesting, please share and/or comment on it.
+Try using regression trees yourself! And if you find this tutorial useful or interesting, share and/or comment on it.
