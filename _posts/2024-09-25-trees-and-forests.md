@@ -121,7 +121,7 @@ scatter.set(title="MPG by Horsepower and Weight", xlabel="Horsepower", ylabel="W
 plt.show()
 ```
 
-<img src = "https://github.com/jerhomie2/My-Blog/assets/img/Py1.png" alt = "" style = "width:600px;">
+<img src = "/blog/assets/img/Py2.png" alt = "" style = "width:600px;">
 
 
 ![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png")
