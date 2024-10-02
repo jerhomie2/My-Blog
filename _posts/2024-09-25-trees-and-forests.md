@@ -74,6 +74,8 @@ The rpart.plot library is great for visualizing the tree that your model has fit
 rpart.plot(model)
 ```
 
+<img src = "https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R2.png" alt = "" style = "width:600px;">
+
 ![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R2.png")
 
 You can then use your model to make predictions on new data, perhaps a testing dataset. (I just reused the mtcars dataset, but in a real world situation, you'd obviously predict on something else)
@@ -118,6 +120,10 @@ scatter = sns.scatterplot(x=mtcars['horsepower'], y=mtcars['weight'], hue=mtcars
 scatter.set(title="MPG by Horsepower and Weight", xlabel="Horsepower", ylabel="Weight")
 plt.show()
 ```
+<figure>
+    <img src = "https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png" alt = "" style = "width:600px;">
+    <figcaption>Scatterplot </figcaption>
+<figure>
 
 ![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png")
 
