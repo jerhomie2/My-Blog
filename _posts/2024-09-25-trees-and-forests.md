@@ -37,14 +37,14 @@ library(rpart.plot)
 
 Now we can read in our data.
 
-```{r}
+```python
 # Load example data (using the built-in mtcars dataset)
 data(mtcars)
 ```
 
 It's always a good idea to plot the data we're interested to get an idea of what we're looking at. In r, I prefer to use ggplot (in the ggfortify library) to plot my data.
 
-```{r}
+```python
 # Plot the variables we're interested in
 ggplot(data = mtcars,
        mapping = aes(x = hp, y = wt, col = mpg)) +
@@ -54,9 +54,11 @@ ggplot(data = mtcars,
   ggtitle("MPG by Horsepower and Weight")
 ```
 
+![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R1.png")
+
 Next, we'll want to make a regression tree model, which will split the data into branches and leaves according to our specifications. Note that regression trees are exceptionally susceptible to overfitting, so we want to make sure to "prune" it back so it doesn't grow too many brances. You can do this using the minsplit, maxdepth, or cp arguments when initializing the model.
 
-```{r}
+```python
 # Fit a regression tree model
 # Here, we predict 'mpg' based on horsepower and weight
 # Each leaf node will have a minimum of 8 data points in it
@@ -68,15 +70,20 @@ summary(model)
 
 The rpart.plot library is great for visualizing the tree that your model has fit and where it decided to split into seperate branches.
 
-```{r}
+```python
 rpart.plot(model)
 ```
 
+![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R2.png")
+
 You can then use your model to make predictions on new data, perhaps a testing dataset. (I just reused the mtcars dataset, but in a real world situation, you'd obviously predict on something else)
 
-```{r}
+```python
 # Make predictions
 predictions <- predict(model, newdata = mtcars)
+
+# View predictions
+head(predictions)
 ```
 
 ### Regression Trees in Python
@@ -112,6 +119,8 @@ scatter.set(title="MPG by Horsepower and Weight", xlabel="Horsepower", ylabel="W
 plt.show()
 ```
 
+![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png")
+
 In Python, we have to split our data into explanatory variables (called features) and response variables (called targets) before we can set up our model.
 
 ```python
@@ -137,6 +146,8 @@ plt.figure(figsize=(15, 8)) # these parameters just make the figure a bit bigger
 plot_tree(model, feature_names=['horsepower', 'weight'], filled=True, rounded=True)
 plt.show()
 ```
+
+![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py2.png")
 
 We can now use our model to make predictions. I'm again just using the data we already have (x), but in another situation, you'll likely want to put in outside data to see how well your model predicts.
 
