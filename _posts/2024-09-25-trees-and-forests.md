@@ -21,8 +21,6 @@ But this technique also comes with some blind spots. Most real-world relationshi
 
 Regression trees are useful because they help us deal with some of those complexities that linear regression can't, and they usually result in better predictions. The idea is that rather than trying to follow a trend in the data, a tree will designate splitting points, called branches, over and over until all we have are a bunch of small clusters of similar data points. We call these clusters "leaves".
 
-![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/tree.png")
-
 ### Regression Trees in R
 
 So how do we implement Regression trees in R code? Let's go through it step by step using the built in 'mtcars' dataset. 
@@ -54,7 +52,7 @@ ggplot(data = mtcars,
   ggtitle("MPG by Horsepower and Weight")
 ```
 
-![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R1.png")
+![Scatterplot](assets/img/R1.png)
 
 Next, we'll want to make a regression tree model, which will split the data into branches and leaves according to our specifications. Note that regression trees are exceptionally susceptible to overfitting, so we want to make sure to "prune" it back so it doesn't grow too many brances. You can do this using the minsplit, maxdepth, or cp arguments when initializing the model.
 
@@ -76,7 +74,7 @@ rpart.plot(model)
 
 <img src = "https://jerhomie2.github.io/My-Blog/blog/trees-and-forests/assets/img/R2.png" alt = "" style = "width:600px;">
 
-![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R2.png")
+![Regression Tree](blog/assets/img/R2.png)
 
 You can then use your model to make predictions on new data, perhaps a testing dataset. (I just reused the mtcars dataset, but in a real world situation, you'd obviously predict on something else)
 
