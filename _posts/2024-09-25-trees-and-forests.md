@@ -7,9 +7,7 @@ image: "/assets/img/forest.jpg"
 display_image: false  # change this to true to display the image below the banner
 ---
 
-# intro
-
-
+Regression trees are an invaluable tool in predictive analytics. With the ability to quickly and effectively group data into chunks of like observations, they become exceptionally useful as an alternative to other regression models.
 
 ### Why Not Just Use Linear Regression?
 
@@ -158,3 +156,5 @@ predictions = model.predict(x) # this function takes just the input values as ar
 # View predictions
 print(predictions[:5])  # View first 5 predictions
 ```
+
+Try using regression trees yourself! And if you find this tutorial useful or interesting, please share and/or comment on it.
