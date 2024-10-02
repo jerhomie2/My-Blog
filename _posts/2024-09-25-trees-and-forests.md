@@ -124,7 +124,7 @@ plt.show()
 <img src = "/blog/assets/img/Py2.png" alt = "" style = "width:600px;">
 
 
-![Scatterplot]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/Py1.png")
+![Scatterplot]("https://github.com/jerhomie2/blog/assets/img/Py1.png")
 
 In Python, we have to split our data into explanatory variables (called features) and response variables (called targets) before we can set up our model.
 
@@ -154,7 +154,7 @@ plt.show()
 
 <img src = "\blog\assets\img\Py2.png" alt = "" style = "width:600px;">
 
-![Regression Tree](https://jerhomie2.github.io/My-Blog/blog/assets/img/Py2.png)
+![Regression Tree](https://jerhomie2.github.io/My-Blog/assets/img/Py2.png)
 
 We can now use our model to make predictions. I'm again just using the data we already have (x), but in another situation, you'll likely want to put in outside data to see how well your model predicts.
 
