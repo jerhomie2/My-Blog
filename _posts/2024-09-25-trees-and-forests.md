@@ -150,7 +150,7 @@ plot_tree(model, feature_names=['horsepower', 'weight'], filled=True, rounded=Tr
 plt.show()
 ```
 
-<img src = "\blog\assets\img\Py2.png" alt = "" style = "width:600px;">
+<img src = "/blog/assets/img/Py2.png" alt = "" style = "width:600px;">
 
 ![Regression Tree](/blog/assets/img/Py2.png)
 
