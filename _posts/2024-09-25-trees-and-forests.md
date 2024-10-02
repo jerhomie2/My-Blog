@@ -74,7 +74,7 @@ The rpart.plot library is great for visualizing the tree that your model has fit
 rpart.plot(model)
 ```
 
-<img src = "https://jerhomie2/github.io/My-Blog/assets/img/R2.png" alt = "" style = "width:600px;">
+<img src = "https://jerhomie2.github.io/My-Blog/blog/trees-and-forests/assets/img/R2.png" alt = "" style = "width:600px;">
 
 ![Regression Tree]("https://github.com/jerhomie2/My-Blog/blob/main/assets/img/R2.png")
 
