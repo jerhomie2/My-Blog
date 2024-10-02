@@ -124,7 +124,7 @@ plt.show()
 <img src = "/blog/assets/img/Py2.png" alt = "" style = "width:600px;">
 
 
-![Scatterplot](https://jerhomie2.github.io/My-Blog/blog/assets/img/Py1.png)
+![Scatterplot](/blog/assets/img/Py1.png)
 
 In Python, we have to split our data into explanatory variables (called features) and response variables (called targets) before we can set up our model.
 
