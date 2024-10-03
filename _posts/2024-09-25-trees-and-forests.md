@@ -150,7 +150,7 @@ plot_tree(model, feature_names=['horsepower', 'weight'], filled=True, rounded=Tr
 plt.show()
 ```
 
-![Regression Tree](/blog/assets/img/Py2.png) 
+![Regression Tree]({{site.url}}/{{site.baseurl}}/assets/img/Py2.png) 
 
 We can now use our model to make predictions. I'm again just using the data we already have (x), but in another situation, you'll likely want to put in outside data to see how well your model predicts.
 
