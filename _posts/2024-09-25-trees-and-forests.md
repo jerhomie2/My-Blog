@@ -52,7 +52,7 @@ ggplot(data = mtcars,
   ggtitle("MPG by Horsepower and Weight")
 ```
 
-![Scatterplot](assets/img/R1.png)
+![Scatterplot]({{site.url}}/{{site.baseurl}}/assets/img/R1.png) 
 
 Next, we'll want to make a regression tree model, which will split the data into branches and leaves according to our specifications. Note that regression trees are exceptionally susceptible to overfitting, so we want to make sure to "prune" it back so it doesn't grow too many brances. You can do this using the minsplit, maxdepth, or cp arguments when initializing the model.
 
@@ -72,9 +72,7 @@ The rpart.plot library is great for visualizing the tree that your model has fit
 rpart.plot(model)
 ```
 
-<img src = "https://jerhomie2.github.io/My-Blog/blog/trees-and-forests/assets/img/R2.png" alt = "" style = "width:600px;">
-
-![Regression Tree](blog/assets/img/R2.png)
+![Regression Tree]({{site.url}}/{{site.baseurl}}/assets/img/R2.png) 
 
 You can then use your model to make predictions on new data, perhaps a testing dataset. (I just reused the mtcars dataset, but in a real world situation, you'd obviously predict on something else)
 
@@ -122,7 +120,7 @@ plt.show()
 <img src = "/blog/assets/img/Py2.png" alt = "" style = "width:600px;">
 
 
-![Scatterplot](/assets/img/Py1.png)
+![Scatterplot]({{site.url}}/{{site.baseurl}}/assets/img/Py1.png) 
 
 In Python, we have to split our data into explanatory variables (called features) and response variables (called targets) before we can set up our model.
 
