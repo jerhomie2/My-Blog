@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Regression Trees"
+title: "Regression Trees Made Easy"
 date: 2024-09-25
-description: How to implement regression trees in R and Python
+description: Learn the basics of how to implement regression trees in R and Python
 image: "/assets/img/forest.jpg"
 display_image: false  # change this to true to display the image below the banner
 ---
@@ -159,5 +159,8 @@ predictions = model.predict(x) # this function takes just the input values as ar
 # View predictions
 print(predictions[:5])  # View first 5 predictions
 ```
+
+### Moving Past Regression Trees
+If you think you're ready for an even more complex prediction technique, try random forests! A good explanation of random forests can be found at this [link](https://builtin.com/data-science/random-forest-algorithm).
 
 Try using regression trees yourself! And if you find this tutorial useful or interesting, share and/or comment on it.
