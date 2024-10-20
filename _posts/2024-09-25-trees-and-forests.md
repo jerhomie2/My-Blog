@@ -40,7 +40,7 @@ Now we can read in our data.
 data(mtcars)
 ```
 
-It's always a good idea to plot the data we're interested to get an idea of what we're looking at. In r, I prefer to use ggplot (in the ggfortify library) to plot my data.
+It's always a good idea to plot the data we're interested to get an idea of what we're looking at. In R, I prefer to use ggplot (in the ggfortify library) to plot my data.
 
 ```python
 # Plot the variables we're interested in
@@ -99,7 +99,7 @@ from sklearn.tree import DecisionTreeRegressor, plot_tree
 from sklearn.model_selection import train_test_split
 ```
 
-Then we can load in our data. For this example I'll use the built in 'mpg' dataset which is similar to R's mtcars data. I'll call the dataset mtcars for uniformity. 
+Then we can load in our data. For this example I'll use the built in 'mpg' dataset which is similar to R's mtcars data. I'll call the dataset mtcars for the sake of consistency. 
 
 ```python
 # Load the built-in mtcars dataset (you can use seaborn to load it)
@@ -131,7 +131,7 @@ y = mtcars['mpg']  # Target: miles per gallon (mpg)
 ```
 
 Then we can set up the model. Once again, we're using horsepower and weight to predict the mpg (miles per gallon) of the cars in the dataset. We use the DecisionTreeRegressor function to set up this model.
-Also not that I'm setting a minimum number of data points to 50 this time because this dataset is much bigger than the one we used in R and will still have plenty of splitting points.
+Also note that I'm setting a minimum number of data points to 50 this time because this dataset is much bigger than the one we used in R and will still have plenty of splitting points.
 
 ```python
 # Fit a regression tree model
@@ -161,6 +161,6 @@ print(predictions[:5])  # View first 5 predictions
 ```
 
 ### Moving Past Regression Trees
-If you think you're ready for an even more complex prediction technique, try random forests! A good explanation of random forests can be found at this [link](https://builtin.com/data-science/random-forest-algorithm).
+If you think you're ready for an even more complex prediction technique, try random forests! A good explanation of random forests can be found [here](https://builtin.com/data-science/random-forest-algorithm).
 
-Try using regression trees yourself! And if you find this tutorial useful or interesting, share and/or comment on it.
+I hope you've enjoyed this tutorial and been able to learn a little bit more about the basics of implementing regression trees. Try using regression trees on your own datasets and leave some comments to let me know how it goes!
