@@ -66,10 +66,12 @@ The bottom team is the Detroit Mercy Titans with only 1 win and 31 losses.
 And the top performing conference is BYU's own Big 12!
 ![conferences]({{site.url}}/{{site.baseurl}}/assets/img/conferences.png)
 *Conference rankings based on average wins to account for different conference sizes
+
 **Only every third conference is named to preserve readability
 
 DISCLAIMER: TheRundown is a very up-to-date API with constantly changing data, so when (not if) you try it for yourself, your results will probably look quite a bit different than mine.
-To see all of my code and summaries, view my full repository [here](https://github.com/jerhomie2/api)
 
 ## Conclusion
-Data is everywhere, just waiting for us to use it. Try using this API for yourself! Or if you aren't as big on sports, find one that can connect you to something you are interested in. Whether it be sports, movies, or literally anything else, API's can give us access to a world of knowledge, so let's go collect some data.
+Data is everywhere, just waiting for us to use it. Try using this API for yourself. Or if you aren't as big on sports, find one that can connect you to something you are interested in, and let me know what you find! Whether it be sports, movies, or literally anything else, API's can give us access to a world of knowledge, so let's go collect some data.
+
+To see all of my code and summaries, view my full repository [here](https://github.com/jerhomie2/api)
