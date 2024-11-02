@@ -7,7 +7,7 @@ image: /assets/img/firebasketball.jpg
 
 APIs are becoming increasingly common as a way of gathering information. They are simple, efficient, and secure. Sports data is widely viewable, but it can be difficult to ethically find and use for personal analyses. This is why APIs like "TheRundown" (linked [here](https://apilayer.com/marketplace/therundown-api)), are so useful. Using data collected from TheRundown, I will answer the question, which NCAA men's basketball teams and conferences outperformed the rest in the 2023 season?
 
-## Disclaimer
+## Ethics
 This blog post is totally legal. In gathering data from this website, I made sure to follow several general princibles of ethical data collection. I checked for any terms and policies and was lucky to find that there weren't too many barriers. I signed up for a free subscription which allows me 750 requests per month. This is much more than I needed for this project, so that's been an easy guideline to follow. This API also allows me to share all of the data I collected from it. For transparency purposes, know that all data in my final dataset come from TheRundown, an API found through apilayer.com.
 
 ## API Connection
@@ -49,7 +49,7 @@ r.status_code # code of 200 means it successfully connected
 ```
 
 ## Final Model
-After connecting successfully to the API, I had to clean up the data that I got from it. I'll spare you the details, but if you're interested, you can follow [this link](https://github.com/jerhomie2/api/blob/main/code.ipynb) to see my full code. Essentially, there was much more information than I needed and some info I did want was embedded weird or not formatted in the most useful way.
+After connecting successfully to the API, I cleaned up the data that I got from it and put it into a pandas dataframe. I'll spare you the data wrangling details, but if you're interested, you can follow [this link](https://github.com/jerhomie2/api/blob/main/code.ipynb) to see my full code.
 
 Ultimately, I ended up with a final dataframe that contains the team name, mascot, record, and conference name for all 362 teams that were part of a conference last year. Here's just a snippet of that dataframe.
 
@@ -57,17 +57,19 @@ Ultimately, I ended up with a final dataframe that contains the team name, masco
 
 ## Summaries/Statistics
 The results are in...
-Based solely on the number of wins and losses of each team, 
+Based solely on the number of wins and losses of each team...
+
 The top team is the Uconn Huskies with 37 wins and only 3 losses.
 ![Top 5]({{site.url}}/{{site.baseurl}}/assets/img/bestteams.png)
-The bottom team is the Detroit Mercy Titans with only a single win and 31 losses.
+The bottom team is the Detroit Mercy Titans with only 1 win and 31 losses.
 ![Bottom 5]({{site.url}}/{{site.baseurl}}/assets/img/worstteams.png)
 And the top performing conference is BYU's own Big 12!
 ![conferences]({{site.url}}/{{site.baseurl}}/assets/img/conferences.png)
+*Conference rankings based on average wins to account for different conference sizes
+**Only every third conference is named to preserve readability
 
-To see the full code and summaries, view my full repository [here](https://github.com/jerhomie2/api/blob/main/code.ipynb)
+DISCLAIMER: TheRundown is a very up-to-date API with constantly changing data, so when (not if) you try it for yourself, your results will probably look quite a bit different than mine.
+To see all of my code and summaries, view my full repository [here](https://github.com/jerhomie2/api)
 
 ## Conclusion
-
-
-TheRundown is a very up-to-date API with constatly changing data.
+Data is everywhere, just waiting for us to use it. Try using this API for yourself! Or if you aren't as big on sports, find one that can connect you to something you are interested in. Whether it be sports, movies, or literally anything else, API's can give us access to a world of knowledge, so let's go collect some data.
